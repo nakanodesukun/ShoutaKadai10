@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         default:
             break
         }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         cell.textLabel?.text = model.prefectures[indexPath.row]
         cell.detailTextLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
